@@ -1,0 +1,84 @@
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 70px; /* Espacio para el navbar fijo */
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #00b894;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, rgba(0, 184, 148, 0.9), rgba(9, 132, 227, 0.9)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    color: #fff;
+}
+
+/* Secciones Generales */
+.page-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    color: #6c757d;
+    margin-bottom: 3rem;
+}
+
+/* Tarjetas de Servicio */
+.service-card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.service-card .icon-img {
+    font-size: 3rem;
+    color: #00b894;
+}
+
+/* Footer */
+.footer {
+    background-color: #2d3436;
+    color: #dfe6e9;
+}
+
+.footer .accordion-button {
+    background-color: #2d3436 !important;
+    color: #fff !important;
+}
+
+.footer .accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
+.footer .accordion-body {
+    color: #adb5bd;
+}
+
+/* Botón Volver Arriba */
+.btn-green {
+    background-color: #00b894;
+    color: #fff;
+    z-index: 1050; /* Asegura que esté por encima de otros elementos */
+}
+
+.btn-green:hover {
+    background-color: #00a383;
+    color: #fff;
+}
