@@ -1,0 +1,290 @@
+/* --- CONFIGURACIÓN GLOBAL --- */
+:root {
+    /* CAMBIO DE PALETA: Colores frescos y de limpieza */
+    --color-primary: #00b894; /* Turquesa menta (Fresco) */
+    --color-accent: #0984e3;  /* Azul agua (Limpio) */
+    --color-dark: #2d3436;
+    --color-light: #f1fbf9;   /* Fondo muy suave, casi blanco menta */
+    --font-main: 'Poppins', sans-serif;
+}
+
+html {
+    /* Mejora el scroll a las anclas (#) con un header fijo */
+    scroll-padding-top: 70px; 
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    padding-top: 70px;
+}
+
+/* --- BLOQUE: PAGE SECTION (Genérico) --- */
+.page-section {
+    padding: 60px 0;
+}
+
+/* --- BLOQUE: ABOUT CONTENT --- */
+.about-content {
+    max-width: 800px; /* Limita el ancho del texto para mejor legibilidad */
+    margin: 0 auto; /* Centra el bloque de texto */
+    line-height: 1.8; /* Aumenta el espacio entre líneas */
+    font-size: 1.05rem;
+}
+
+/* --- BLOQUE: CONTACT AREA --- */
+.contact-area {
+    padding: 60px 0;
+}
+
+/* --- BLOQUE: NAV CUSTOM --- */
+.nav-custom {
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 184, 148, 0.15); /* Sombra verdosa suave */
+}
+
+.nav-custom__logo {
+    font-weight: 700;
+    color: var(--color-primary) !important;
+}
+
+.nav-custom__list .nav-link {
+    font-weight: 500;
+    color: var(--color-dark);
+}
+
+.nav-custom__list .nav-link.active,
+.nav-custom__list .nav-link:hover {
+    color: var(--color-primary);
+}
+
+/* --- BLOQUE: HERO SECTION --- */
+.hero-section {
+    /* Gradiente fresco: de Turquesa a Azul */
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    color: #ffffff;
+    padding: 100px 0 80px;
+    margin-bottom: 40px;
+    border-bottom-left-radius: 50px; /* Detalle estético curvo */
+    border-bottom-right-radius: 50px;
+}
+
+.hero-section__title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section__subtitle {
+    font-weight: 400;
+    font-size: 1.1rem;
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.hero-section__cta {
+    background-color: #ffffff;
+    color: var(--color-primary);
+    border: none;
+    padding: 12px 35px;
+    font-weight: 600;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.hero-section__cta:hover {
+    background-color: #f0f0f0;
+    color: var(--color-accent);
+    transform: translateY(-2px); /* Pequeña animación */
+}
+
+/* --- BLOQUE: SECCIÓN SERVICIOS --- */
+.services-area {
+    padding: 60px 0;
+}
+
+.section-header {
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.section-header__sub {
+    color: #636e72;
+}
+
+/* --- BLOQUE: SERVICE CARD (BEM) --- */
+.service-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 2.5rem 2rem;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Centrado para estilo limpieza */
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 184, 148, 0.15); /* Sombra coloreada al hover */
+}
+
+/* Elemento: Icono */
+.service-card__icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+/* Elemento: Título */
+.service-card__title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color-dark);
+}
+
+/* Elemento: Descripción */
+.service-card__desc {
+    font-size: 0.95rem;
+    color: #636e72;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Elemento: Botón */
+.service-card__btn {
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: 8px 25px;
+    border-radius: 50px; /* Botones redondos */
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.service-card__btn:hover {
+    background-color: var(--color-primary);
+    color: #ffffff;
+}
+
+/* --- MODIFICADORES (Variaciones) --- */
+
+/* Modificador del bloque: Tarjeta destacada (Turquesa) */
+.service-card--featured {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border: none;
+}
+
+.service-card--featured .service-card__title,
+.service-card--featured .service-card__desc {
+    color: #ffffff;
+}
+
+/* Modificador del botón: versión clara para fondo oscuro */
+.service-card__btn--light {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.service-card__btn--light:hover {
+    background-color: #ffffff;
+    color: var(--color-primary);
+}
+
+/* --- BLOQUE: CONTACT FORM & INFO --- */
+.contact-form {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-family: var(--font-main);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-dark);
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+    color: var(--color-dark);
+    background-color: #fff;
+    border-color: var(--color-primary);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(0, 184, 148, 0.25);
+}
+
+.contact-info h3 {
+    font-weight: 600;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    color: #636e72;
+    margin-bottom: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+.info-item i {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+/* --- BLOQUE: CTA SECTION --- */
+.cta-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    color: #ffffff;
+}
+
+.cta-section__title {
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section__subtitle {
+    font-weight: 400;
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+    opacity: 0.9;
+}
+
+/* --- FOOTER --- */
+.site-footer {
+    padding: 60px 0;
+    background-color: var(--color-dark);
+    color: #dfe6e9;
+}
+
+.site-footer__text {
+    margin: 0;
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+/* --- RESPONSIVE --- */
+@media (min-width: 992px) {
+    .hero-section__title {
+        font-size: 3.5rem;
+    }
+}
