@@ -289,3 +289,29 @@ body {
         font-size: 3.5rem;
     }
 }
+
+
+
+/* Color verde personalizado del proyecto */
+.btn-green {
+    background-color: rgba(1, 179, 157, 0.8);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Asegura que siempre esté por encima de otros elementos */
+}
+
+.btn-green:hover {
+    background-color: rgba(1, 87, 77, 0.8);
+    color: #fff;
+}
+
+/* Ajuste opcional para que el icono se vea bien */
+.btn-green i {
+    font-size: 1.5rem;
+}
