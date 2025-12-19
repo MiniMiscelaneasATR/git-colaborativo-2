@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es-Cl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">    <!-- 3. Tu CSS BEM -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles-servicios.css">
+</head>
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg fixed-top nav-custom">
+        <div class="container">
+            <!-- Nombre de la empresa -->
+            <a class="navbar-brand nav-custom__logo" href="./index.html">EcoClean ✨</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#contact">Contact</a>
+                        </li>
+
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION: Mensaje de limpieza -->
+    <header class="hero-section">
+        <div class="container text-center">
+            <h1 class="hero-section__title">Experience the Joy of a Spotless Space</h1>
+            <p class="hero-section__subtitle">
+                Professional cleaning services tailored to your needs. 
+                Relax and let us handle the dirty work.
+            </p>
+            <a href="#services-grid" class="btn btn-light hero-section__cta">See Our Plans</a>
+        </div>
+    </header>
+
+    <!-- SECCIÓN DE SERVICIOS -->
+    <section id="services-grid" class="services-area">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-header">Our Cleaning Solutions</h2>
+                <p class="section-header__sub">Eco-friendly products, sparkling results.</p>
+            </div>
+
+            <div class="row g-4">
+                
+                <!-- Servicio 1: Limpieza Residencial -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="service-card">
+                        <div class="service-card__icon">🏠</div>
+                        <h3 class="service-card__title">Residential Cleaning</h3>
+                        <p class="service-card__desc">
+                            From living rooms to kitchens, we ensure every corner of your home is dust-free and sanitized.
+                        </p>
+                        <button class="service-card__btn">Get Quote</button>
+                    </article>
+                </div>
+
+                <!-- Servicio 2: Limpieza de Oficinas (Destacado) -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- BEM Modificador: service-card--featured -->
+                    <article class="service-card service-card--featured">
+                        <div class="service-card__icon">🏢</div>
+                        <h3 class="service-card__title">Commercial Spaces</h3>
+                        <p class="service-card__desc">
+                            A clean office boosts productivity. We provide scheduled maintenance for businesses of all sizes.
+                        </p>
+                        <!-- BEM Modificador Botón: service-card__btn--light -->
+                        <button class="service-card__btn service-card__btn--light">Get Quote</button>
+                    </article>
+                </div>
+
+                <!-- Servicio 3: Limpieza Profunda -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="service-card">
+                        <div class="service-card__icon">✨</div>
+                        <h3 class="service-card__title">Deep Cleaning</h3>
+                        <p class="service-card__desc">
+                            Perfect for moving in or moving out. We go beyond the surface to eliminate grime and allergens.
+                        </p>
+                        <button class="service-card__btn">Get Quote</button>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p class="site-footer__text">
+                &copy; 2025 FreshStart Cleaning Services. Making your world shine.
+            </p>
+        </div>
+    </footer>
+    <!-- Botón para volver arriba -->
+    <button type="button" class="btn btn-green btn-lg position-fixed bottom-0 end-0 m-3" id="btnTop" title="Volver arriba">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script></body>
+    <script src="js/app.js"></script>
+</html>
