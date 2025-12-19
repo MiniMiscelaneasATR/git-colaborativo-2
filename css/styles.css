@@ -8,11 +8,60 @@
     --font-main: 'Poppins', sans-serif;
 }
 
+html {
+    /* Mejora el scroll a las anclas (#) con un header fijo */
+    scroll-padding-top: 70px; 
+}
+
 body {
     font-family: var(--font-main);
     color: var(--color-dark);
     background-color: var(--color-light);
     padding-top: 70px;
+}
+
+/* --- BLOQUE: ABOUT CONTENT --- */
+.about-content {
+    max-width: 800px; /* Limita el ancho del texto para mejor legibilidad */
+    margin: 0 auto; /* Centra el bloque de texto */
+    line-height: 1.8; /* Aumenta el espacio entre líneas */
+    font-size: 1.05rem;
+}
+
+/* --- BLOQUE: CONTACT AREA --- */
+.contact-area {
+    padding: 60px 0;
+    background-color: #ffffff; /* Fondo blanco para contrastar */
+}
+
+.contact-form {
+    background-color: var(--color-light);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-family: var(--font-main);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-dark);
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+    color: var(--color-dark);
+    background-color: #fff;
+    border-color: var(--color-primary);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(0, 184, 148, 0.25);
 }
 
 /* --- BLOQUE: NAV CUSTOM --- */
