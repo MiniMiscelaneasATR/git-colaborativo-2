@@ -20,16 +20,18 @@
     </header>
 
     <main>
-        <section id="about-us-content">
-            <h2>Nuestra Historia</h2>
-            <p>EcoClean nació de la idea de que un hogar limpio no tiene por qué costar la salud de nuestro planeta. Fundada en 2024, nuestra misión es proporcionar servicios de limpieza excepcionales utilizando solo productos ecológicos y sostenibles.</p>
-            
-            <h2>Nuestra Misión</h2>
-            <p>Nos dedicamos a ofrecer una limpieza profunda y efectiva que sea segura para tu familia, tus mascotas y el medio ambiente. Creemos en la transparencia, la calidad y un futuro más verde para todos.</p>
-
-            <h2>El Equipo</h2>
-            <p>Nuestro equipo está formado por profesionales apasionados por la limpieza y el medio ambiente, comprometidos a brindarte el mejor servicio posible.</p>
-        </section>
+        <div class="container">
+            <section id="about-us-content">
+                <h2>Nuestra Historia</h2>
+                <p>EcoClean nació de la idea de que un hogar limpio no tiene por qué costar la salud de nuestro planeta. Fundada en 2024, nuestra misión es proporcionar servicios de limpieza excepcionales utilizando solo productos ecológicos y sostenibles.</p>
+                
+                <h2>Nuestra Misión</h2>
+                <p>Nos dedicamos a ofrecer una limpieza profunda y efectiva que sea segura para tu familia, tus mascotas y el medio ambiente. Creemos en la transparencia, la calidad y un futuro más verde para todos.</p>
+    
+                <h2>El Equipo</h2>
+                <p>Nuestro equipo está formado por profesionales apasionados por la limpieza y el medio ambiente, comprometidos a brindarte el mejor servicio posible.</p>
+            </section>
+        </div>
     </main>
 
     <footer>
