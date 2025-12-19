@@ -3,34 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoClean</title>
+    <title>EcoClean - Limpieza Ecológica Profesional</title>
+    <!-- Enlazamos al nuevo archivo de estilos y a la fuente Poppins -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to EcoClean</h1>
-        <nav>
-            <ul>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#about">Sobre Nosotros</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+    <!-- Header con el nuevo estilo -->
+    <nav class="navbar navbar-expand-lg fixed-top nav-custom">
+        <div class="container">
+            <a class="navbar-brand nav-custom__logo" href="index.html">EcoClean</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav-custom__list">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nueva sección Hero -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="hero-section__title">Un planeta limpio empieza en tu hogar</h1>
+            <p class="hero-section__subtitle">Soluciones de limpieza profesionales con productos 100% ecológicos que cuidan de tu familia y del medio ambiente.</p>
+            <a href="contacto.html" class="btn hero-section__cta">Solicita una cotización</a>
+        </div>
     </header>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <p>We offer eco-friendly cleaning solutions for homes and businesses.</p>
+    <!-- Sección de Servicios con tarjetas -->
+    <section id="services" class="services-area">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-header">Nuestros Servicios</h2>
+                <p class="section-header__sub">Limpieza profunda, impacto mínimo.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <i class="bi bi-house-heart-fill service-card__icon" style="color: var(--color-primary);"></i>
+                        <h3 class="service-card__title">Limpieza Residencial</h3>
+                        <p class="service-card__desc">Dejamos tu hogar impecable usando solo productos seguros, biodegradables y libres de tóxicos.</p>
+                        <a href="#" class="service-card__btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card service-card--featured">
+                        <i class="bi bi-building-fill-check service-card__icon"></i>
+                        <h3 class="service-card__title">Limpieza Comercial</h3>
+                        <p class="service-card__desc">Creamos un ambiente de trabajo saludable y productivo para tus empleados y clientes.</p>
+                        <a href="#" class="service-card__btn service-card__btn--light">Plan destacado</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <i class="bi bi-recycle service-card__icon" style="color: var(--color-accent);"></i>
+                        <h3 class="service-card__title">Post-Construcción</h3>
+                        <p class="service-card__desc">Eliminamos todos los residuos de obra de manera ecológica, dejando el espacio listo para ser habitado.</p>
+                        <a href="#" class="service-card__btn">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>EcoClean is dedicated to providing sustainable cleaning services that protect the environment.</p>
+    <!-- Nueva sección de Llamada a la Acción (CTA) -->
+    <section class="cta-section text-center">
+        <div class="container">
+            <h2 class="cta-section__title">¿Listo para un cambio?</h2>
+            <p class="cta-section__subtitle">Permítenos mostrarte cómo podemos hacer tu espacio más limpio y saludable.</p>
+            <a href="contacto.html" class="btn hero-section__cta">Contáctanos Ahora</a>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email:
-    
+    <footer class="site-footer text-center">
+        <p class="site-footer__text">&copy; 2024 EcoClean. Todos los derechos reservados.</p>
+    </footer>    
 </body>
 </html>
